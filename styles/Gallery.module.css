@@ -1,0 +1,50 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header {
+  position: relative;
+}
+.header_image {
+  filter: hue-rotate(275deg) saturate(0.25);
+}
+.title {
+  position: absolute;
+  left: 92px;
+  top: 93px;
+  margin: 0 0 2rem 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  z-index: 2;
+}
+.gallery {
+  padding: 2rem 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+.gallery_item {
+  position: relative;
+  min-height: 25vw;
+  transform: none;
+  transition: transform 0.2s ease-in;
+}
+
+.gallery_item:hover {
+  box-shadow:
+      0 0 16px 0 rgba(0,0,0, 0.15),
+      0 0 8px 1px rgba(0,0,0, 0.05);
+  transform: scale(1.1);
+}

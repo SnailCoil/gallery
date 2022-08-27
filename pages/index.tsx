@@ -13,13 +13,19 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
+        <div className={styles.header}>
+          <h1 className={styles.title}>
+            Sara Ranus
+          </h1>
+          <div className={styles.header_image}>
+            <Image src="/stock/spray.png" alt="Vercel Logo" width={480} height={240} />
+          </div>
+        </div>
+        <span className={styles.logo_container}>
+          <Image className={styles.logo} src="/logo.jpg" alt="Vercel Logo" width={128} height={128} />
+        </span>
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          I like to paint sometimes
         </p>
 
         <div className={styles.grid}>
